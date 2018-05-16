@@ -3,10 +3,6 @@ import Input from "../components/Input/Input";
 import Button from '../components/Button/Button';
 import ReactDOM from "react-dom";
 
-function AppView() {
-    return <div>Hello from Flux!</div>;
-}
-
 function AppView(props) {
     return (
         <div>
@@ -20,7 +16,7 @@ function AppView(props) {
 function Header(props) {
     return (
         <header id="header">
-            <h1>todos</h1>
+            <h1>Make A Todo List!</h1>
         </header>
     );
 }

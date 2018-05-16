@@ -6,21 +6,21 @@ import Page2 from './pages/Page2/Page2';
 import Navbar from '../src/components/Navbar/Navbar';
 
 class App extends Component {
-  render() {
-    return (
-		<Router>
-			<div>
-				<Navbar/>
+	render() {
+		return (
+			<Router>
+				<div>
+					<Navbar/>
 
-				<Switch>
-					<Route exact path="/" component={Page1}/>
-					<Route path="/page1" component={Home}/>
-					<Route path="/page2" component={Page2}/>
-				</Switch>
-			</div>
-		</Router>
-    );
-  }
+					<Switch>
+						<Route exact path="/" component={Page1}/>
+						<Route path="/page1" component={Home}/>
+						<Route path="/page2" component={Page2}/>
+					</Switch>
+				</div>
+			</Router>
+		);
+	}
 }
 
 export default App;

@@ -22,18 +22,21 @@ class TodoStore extends ReduceStore {
                     return state;
                 }
                 const id = Counter.increment();
-                return state.set(id, new Todo({
-                    id,
-                    text: action.text,
-                    complete: false,
-                }));
+                    return state.set(id, new Todo({
+                        id,
+                        text: action.text,
+                        complete: false,
+                    }));
+
             case TodoActionTypes.DELETE_TODO:
                 return state.delete(action.id);
+
             case TodoActionTypes.TOGGLE_TODO:
                 return state.update(
                     action.id,
                     todo => todo.set('complete', !todo.complete),
                 );
+
             default:
                 return state;
         }

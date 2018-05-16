@@ -1,0 +1,17 @@
+Button{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.list li{
+    background-color: rgba(0, 153, 77, 0.6);
+    list-style: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: large;
+    margin-bottom: 5px;
+}
+
+ul.List{
+    padding: 0;
+}

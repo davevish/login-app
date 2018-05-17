@@ -23,10 +23,7 @@ function Header(props) {
 }
 
 function Main(props) {
-    if (props.todos.size === 0) {
-        // return null;
-		console.log('main loaded');
-    }
+
     return (
         <div className="container col-sm-5" id="main">
 
@@ -55,10 +52,6 @@ function Main(props) {
 }
 
 function Footer(props) {
-    if (props.todos.size === 0) {
-        // return null;
-		console.log('footer loaded');
-    }
 
     const remaining = props.todos.filter(todo => !todo.complete).size;
     const phrase = remaining === 1 ? ' item left' : ' items left';

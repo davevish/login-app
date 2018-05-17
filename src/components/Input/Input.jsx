@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "./Input.css";
-import Button from "../Button/Button";
+// import Button from "../Button/Button";
 import TodoActions from '../../data/TodoActions';
 
 class Input extends Component {
@@ -10,7 +10,7 @@ class Input extends Component {
 			<div>
 				<form>
 					<input
-						onSubmit={TodoActions.addTodo()}
+						onSubmit={(e) => {e.preventDefault; TodoActions.addTodo()}}
 						type="text"
 						className="form-control"
 						placeholder="Enter New Task"

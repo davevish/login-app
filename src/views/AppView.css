@@ -1,10 +1,11 @@
 .view{
-    background-color: lightgreen;
+    background-color: lightcyan;
     list-style: none !important;
     padding: 15px;
     border-radius: 5px;
     font-size: large;
-    margin-bottom: 5px;
+    /*margin-bottom: 5px;*/
+    margin-top: 5px;
 }
 
 ul{

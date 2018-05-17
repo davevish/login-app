@@ -10,7 +10,7 @@ class Input extends Component {
 			<div>
 				<form>
 					<input
-						onSubmit={(e) => {e.preventDefault; TodoActions.addTodo()}}
+						// onSubmit={(e) => {e.preventDefault; TodoActions.addTodo('test')}}
 						type="text"
 						className="form-control"
 						placeholder="Enter New Task"

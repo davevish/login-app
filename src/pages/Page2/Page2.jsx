@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import "./Page2.css";
-import Input from "../../components/Input/Input";
-import Button from '../../components/Button/Button';
-import ReactDOM from "react-dom";
+// import Input from "../../components/Input/Input";
+// import Button from '../../components/Button/Button';
+// import ReactDOM from "react-dom";
 
 import AppContainer from '../../containers/AppContainer';
 

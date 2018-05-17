@@ -1,7 +1,8 @@
 import React from 'react';
 import Input from "../components/Input/Input";
-import Button from '../components/Button/Button';
-import ReactDOM from "react-dom";
+// import Button from '../components/Button/Button';
+// import ReactDOM from "react-dom";
+import './AppView.css';
 
 function AppView(props) {
     return (
@@ -40,11 +41,10 @@ function Main(props) {
                                 checked={todo.complete}
                                 onChange={() => props.onToggleTodo(todo.id)}
                             />
+
                             <label>{todo.text}</label>
-                            <button
-                                className="destroy"
-                                onClick={() => props.onDeleteTodo(todo.id)}
-                            />
+
+							<button className="destroy" onClick={() => props.onDeleteTodo(todo.id)}/>
                         </div>
                     </li>
                 ))}
@@ -61,16 +61,16 @@ function Footer(props) {
     const remaining = props.todos.filter(todo => !todo.complete).size;
     const phrase = remaining === 1 ? ' item left' : ' items left';
 
-    return (
-        <footer id="footer">
-      <span id="todo-count">
-        <strong>
-          {remaining}
-        </strong>
-          {phrase}
-      </span>
-        </footer>
-    );
+	return (
+		<footer id="footer">
+			<span id="todo-count">
+				<strong>
+					{remaining}
+				</strong>
+					{phrase}
+			</span>
+		</footer>
+	);
 }
 
 export default AppView;

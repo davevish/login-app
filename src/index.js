@@ -10,6 +10,6 @@ ReactDOM.render(<App />, document.getElementById('todoapp'));
 
 // We will remove these lines later:
 
-TodoActions.addTodo('Task 1');
-TodoActions.addTodo('Task 2');
-TodoActions.addTodo('Task 3');
+// TodoActions.addTodo('Task 1');
+// TodoActions.addTodo('Task 2');
+// TodoActions.addTodo('Task 3');

@@ -7,6 +7,8 @@ const Actions = {
             type: TodoActionTypes.ADD_TODO,
             text,
         });
+
+        console.log('Add To Do Called');
     },
     deleteTodo(id) {
         TodoDispacher.dispatch({
@@ -20,6 +22,9 @@ const Actions = {
             id,
         });
     },
+	dummy() {
+		console.log('dummy called');
+	}
 };
 
 export default Actions;

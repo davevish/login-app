@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import "./Input.css";
 import Button from "../Button/Button";
+import TodoActions from '../../data/TodoActions';
 
 class Input extends Component {
 
@@ -8,10 +9,16 @@ class Input extends Component {
 		return (
 			<div>
 				<form>
-					<input type="text" className="form-control" placeholder="Enter New Task"/>
+					<input
+						onSubmit={TodoActions.addTodo()}
+						type="text"
+						className="form-control"
+						placeholder="Enter New Task"
+					/>
+
 				</form>
 
-				<Button/>
+				{/*<Button onClick={TodoActions.dummy()}/>*/}
 
 			</div>
 		);

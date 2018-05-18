@@ -17,6 +17,10 @@ ul li input {
     margin-right: 5px;
 }
 
+input{
+    border-radius: 5px;
+}
+
 ul li button {
     margin-left: 5px;
     border: none;

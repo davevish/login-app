@@ -1,14 +1,12 @@
 var express = require('express');
+var app = express();
+var path = require(path);
 var port = process.env.port ||5000;
 
-var app = express();
-app.use(express.static('client/build'));
+app.use(express.static('./public'));
 
-app.get('/v1/hello', function (req, res) {
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    res.send('Hello World!\n');
-});
+require('./src/routes/routes')(app);
 
-app.listen(4000, function () {
+app.listen(port, function () {
     console.log('Example app listening on port 4000!');
 });
